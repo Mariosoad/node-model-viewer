@@ -3,7 +3,7 @@ const app = express();
 const path = require("path");
 
 //settings
-app.set("port", 3000); //Parametro del Puerto
+app.set("port", process.env.PORT || 3000); //Parametro del Puerto
 app.set("views", path.join(__dirname, "views")); //Especificar de donde vamos a tomar los templates
 app.set("view engine", "ejs"); //Especificamos que motor de plantillas vamos a trabajar "ejs"
 //settings
