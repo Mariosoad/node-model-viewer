@@ -2,22 +2,8 @@
     <%- include('partials/header')%>
     <body>
         <h1>PRIMERA PRUEBA DEL MODEL VIEWER</h1>
+        <%- include('models')%>
 
-        <model-viewer         
-        src="./assets/models/neanea.glb"
-            auto-rotate
-            camera-controls
-            ar
-        > 
-
-        <button class="Hotspot" slot="hotspot-1" data-position="0.13444639691182853m -0.244971685463411m -0.1638761797554278m" data-normal="0.9991917704538339m -0.04004753661170565m -0.0034641981275616244m" data-visibility-attribute="visible">
-            <div class="HotspotAnnotation">Frente</div>
-        </button><button class="Hotspot" slot="hotspot-3" data-position="0.0085187537708242m 2.6702602962691584m -2.2758078747138812m" data-normal="0.9988440045932152m 0.044121284527040575m -0.019077912356265995m" data-visibility-attribute="visible">
-            <div class="HotspotAnnotation">Top</div>
-        </button><button class="Hotspot" slot="hotspot-4" data-position="-0.3032927373379435m -3.58238818259486m 0.8478024221880672m" data-normal="0.9991976181113275m -0.039903226714922725m 0.0034427399535333675m" data-visibility-attribute="visible">
-            <div class="HotspotAnnotation">Back</div>
-        </button>
-
-        </model-viewer>
+        <%- include('partials/footer')%>
     </body>
 </html>
